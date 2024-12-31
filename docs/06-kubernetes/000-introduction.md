@@ -10,7 +10,7 @@ import React from 'react';
 import VideoLibraryButton from '@site/src/components/VideoLibraryWidgets/VideoLibraryButton';
 
 
-<VideoLibraryButton url="http://localhost:3000/videos/kubernetes" />
+<VideoLibraryButton url="/videos/kubernetes" />
 
 
 - [Leçon001 : Introduction à Kubernetes et concepts fondamentaux](001-Leçon001_Introduction_à_Kubernetes_et_concepts_fondamentaux.md)
