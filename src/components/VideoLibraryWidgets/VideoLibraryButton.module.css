@@ -1,0 +1,97 @@
+.container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 2s ease;
+}
+
+.container.loaded {
+  transform: scale(3); /* Adjust the scale factor as needed */
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: var(--ifm-font-family-base);
+  color: #fff;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  transition: all 500ms ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: inherit;
+  transition: all 500ms ease;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  filter: brightness(1.2);
+}
+
+.button:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  position: relative;
+  z-index: 1;
+  transition: all 500ms ease;
+}
+
+.button:hover .text {
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.highlight {
+  transition: all 500ms ease;
+}
+
+.button:hover .highlight {
+  font-size: 1.5rem;
+  color: #000; /* Change to dark black */
+  /* color: #00008B; */ /* Uncomment this line to use dark blue instead */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    font-size: 0.8rem;
+    width: 150px;
+    height: 150px;
+  }
+}

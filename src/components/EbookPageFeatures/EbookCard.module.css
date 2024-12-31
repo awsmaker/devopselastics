@@ -1,0 +1,63 @@
+.ebookCard {
+  background: linear-gradient(to bottom right, white, lightpurple);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 300ms;
+}
+
+.ebookCard:hover {
+  transform: scale(1.02);
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.coverImage {
+  width: 100%;
+  transition: transform 300ms;
+}
+
+.coverImage:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  background: linear-gradient(to right, purple, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.priceCta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.ctaButton {
+  background: linear-gradient(to right, purple, blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: transform 300ms;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}

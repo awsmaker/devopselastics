@@ -1,0 +1,30 @@
+.categoryGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+@media (min-width: 768px) {
+  .categoryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .categoryGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.categoryCard {
+  background: linear-gradient(to bottom right, white, lightpurple);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 300ms;
+}
+
+.categoryCard:hover {
+  transform: scale(1.02);
+}

@@ -1,0 +1,87 @@
+.videoCard {
+  background: linear-gradient(to bottom right, white, lightpurple);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 300ms;
+}
+
+.videoCard:hover {
+  transform: scale(1.02);
+}
+
+.thumbnailContainer {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.thumbnail {
+  width: 100%;
+  transition: transform 300ms;
+}
+
+.thumbnailContainer:hover .thumbnail {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.thumbnailContainer:hover .overlay {
+  opacity: 1;
+}
+
+.playIcon {
+  font-size: 2rem;
+  color: white;
+}
+
+.title {
+  background: linear-gradient(to right, purple, blue);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.description {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+.priceCta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: purple;
+}
+
+.ctaButton {
+  background: linear-gradient(to right, purple, blue);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: transform 300ms;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+}
